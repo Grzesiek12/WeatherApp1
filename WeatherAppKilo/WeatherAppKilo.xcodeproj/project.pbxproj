@@ -13,6 +13,10 @@
 		2249C52327B31E6E0081C111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2249C52127B31E6E0081C111 /* Main.storyboard */; };
 		2249C52527B31E700081C111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2249C52427B31E700081C111 /* Assets.xcassets */; };
 		2249C52827B31E700081C111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2249C52627B31E700081C111 /* LaunchScreen.storyboard */; };
+		2249C53027B329F80081C111 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249C52F27B329F80081C111 /* WeatherVC.swift */; };
+		2249C53227B47A370081C111 /* WeatherReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249C53127B47A370081C111 /* WeatherReport.swift */; };
+		2249C53427B486C90081C111 /* WeatherBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249C53327B486C90081C111 /* WeatherBreakdown.swift */; };
+		2249C53627B486D40081C111 /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249C53527B486D40081C111 /* WeatherCondition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2249C52427B31E700081C111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2249C52727B31E700081C111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2249C52927B31E700081C111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2249C52F27B329F80081C111 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		2249C53127B47A370081C111 /* WeatherReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReport.swift; sourceTree = "<group>"; };
+		2249C53327B486C90081C111 /* WeatherBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBreakdown.swift; sourceTree = "<group>"; };
+		2249C53527B486D40081C111 /* WeatherCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCondition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				2249C51B27B31E6E0081C111 /* AppDelegate.swift */,
 				2249C51D27B31E6E0081C111 /* SceneDelegate.swift */,
 				2249C51F27B31E6E0081C111 /* ViewController.swift */,
+				2249C52F27B329F80081C111 /* WeatherVC.swift */,
+				2249C53127B47A370081C111 /* WeatherReport.swift */,
+				2249C53527B486D40081C111 /* WeatherCondition.swift */,
+				2249C53327B486C90081C111 /* WeatherBreakdown.swift */,
 				2249C52127B31E6E0081C111 /* Main.storyboard */,
 				2249C52427B31E700081C111 /* Assets.xcassets */,
 				2249C52627B31E700081C111 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2249C53427B486C90081C111 /* WeatherBreakdown.swift in Sources */,
 				2249C52027B31E6E0081C111 /* ViewController.swift in Sources */,
 				2249C51C27B31E6E0081C111 /* AppDelegate.swift in Sources */,
+				2249C53227B47A370081C111 /* WeatherReport.swift in Sources */,
 				2249C51E27B31E6E0081C111 /* SceneDelegate.swift in Sources */,
+				2249C53027B329F80081C111 /* WeatherVC.swift in Sources */,
+				2249C53627B486D40081C111 /* WeatherCondition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -272,6 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,6 +310,7 @@
 				DEVELOPMENT_TEAM = 9FMANP6Q86;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAppKilo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gw123asdfzcx.WeatherAppKilo;
+				PRODUCT_BUNDLE_IDENTIFIER = gw123asdfzcx.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +339,7 @@
 				DEVELOPMENT_TEAM = 9FMANP6Q86;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAppKilo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gw123asdfzcx.WeatherAppKilo;
+				PRODUCT_BUNDLE_IDENTIFIER = gw123asdfzcx.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

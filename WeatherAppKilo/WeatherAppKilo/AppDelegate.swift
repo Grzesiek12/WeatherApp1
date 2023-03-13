@@ -11,7 +11,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    //"75ce4ca21248ab7c4dd627df495b3fd8"
+    
+  //"7c464974bd024da15940fe7b0f2c973c"
+    //"api.openweathermap.org/data/2.5/weather?q=London&appid="
+    
+    //"http://openweathermap.org/data/2.5/")
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
